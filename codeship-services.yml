@@ -2,6 +2,6 @@ jenkinsfileRunner:
   image: jenkins/jenkinsfile-runner:1.0-beta-17
   volumes:
     - .:/workspace
-    - jenkins.yaml:/jenkinsfile-runner/config.yaml
+    - jenkins.yml:/jenkinsfile-runner/jenkins.yml
   environment:
-    - CASC_JENKINS_CONFIG=/jenkinsfile-runner/config.yaml
+    - CASC_JENKINS_CONFIG=/jenkinsfile-runner/jenkins.yml
